@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>OmniDrive: A Holistic Vision-Language Dataset for Autonomous Driving with Counterfactual Reasoning</title>
+  <title>VideoITG: Improving Multimodal Video Understanding with Instructed Temporal Grounding</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -54,53 +54,50 @@
               <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=7TWugs4AAAAJ">Shihao Wang</a><sup>1,2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com.hk/citations?user=1VI_oYUAAAAJ&hl=zh-CN&oi=ao">Zhiding Yu*</a><sup>1</sup>,
+              <a href="https://scholar.google.com.hk/citations?user=lRj3moAAAAAJ&hl=zh-CN&oi=sra">Guo Chen</a><sup>2,3</sup>,
             </span>
             <span class="author-block">
-              Xiaohui Jiang</a><sup>3</sup>,
+              <a href="https://scholar.google.com.hk/citations?user=HEY3UzgAAAAJ&hl=zh-CN&oi=ao">De-an Huang</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com.hk/citations?user=jIUI6F4AAAAJ&hl=zh-CN&oi=ao">Shiyi Lan</a><sup>1</sup>,
+              <a href="https://scholar.google.com.hk/citations?user=H2fJLqEAAAAJ&hl=zh-CN&oi=sra">Zhiqi Li</a><sup>2,3</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com.hk/citations?user=lRTuQyAAAAAJ&hl=zh-CN&oi=sra">Min Shi</a><sup>1</sup>,
+              <a href="https://scholar.google.com.hk/citations?user=zOQj6-gAAAAJ&hl=zh-CN&oi=ao">Guilin Liu</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a href="https://nadinechang.com/">Nadine Chang</a><sup>1</sup>,
+              <a href="https://scholar.google.com/citations?user=Oyx-_UIAAAAJ&hl=en">Jose M. Alvarez</a><sup>2</sup>,
             </span>
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://scholar.google.com.hk/citations?user=P9FclNEAAAAJ&hl=zh-CN&oi=ao">Jan Kautz</a><sup>1</sup>,
+              <a href="https://scholar.google.com.hk/citations?user=tAK5l1IAAAAJ&hl=zh-CN&oi=ao">Lei Zhang</a><sup>1*</sup>,
             </span>
             <span class="author-block">
-              <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=xuYqZlUAAAAJ">Ying Li</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com.hk/citations?hl=zh-CN&user=Oyx-_UIAAAAJ">Jose M. Alvarez</a><sup>1</sup>,
+              <a href="https://scholar.google.com.hk/citations?user=1VI_oYUAAAAJ&hl=zh-CN&oi=ao">Zhiding Yu</a><sup>2*</sup>,
             </span>
           </div>
 
           <div class="organization">
-            <span class="author-block">NVIDIA<sup>1</sup>, The Hong Kong Polytechnic University<sup>2</sup>, Beijing Institute of Technology<sup>3</sup></span>
+            <span class="author-block">The Hong Kong Polytechnic University<sup>1</sup>, NVIDIA<sup>2</sup>, Nanjing University<sup>3</sup></span>
             <!-- <span class="author-block"><sup>2</sup>Google Research</span> -->
           </div>
 
           <div class="Equal Corresponding">
-            <span class="author-block">*Corresponding Authors</span>
+            <span class="author-block">* Equal Corresponding Authors</span>
             <!-- <span class="author-block"><sup>2</sup>Google Research</span> -->
           </div>
 	<div class="Email info">
 	  <span style="font-size: 1.2em; color: #5e5c5b;">&#9993;</span>
 	  <span class="author-block" style="font-size: smaller;">
-	    scutchrisding@gmail.com
+	    cslzhang@comp.polyu.edu.hk; scutchrisding@gmail.com
 	  </span>
 	</div>
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2405.01533"
+                <a href="https://arxiv.org/pdf/2408.15998"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -110,7 +107,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/NVlabs/OmniDrive"
+                <a href="https://github.com/NVlabs/EAGLE"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -131,12 +128,12 @@
       <!-- Abstract. -->
       <div class="columns is-centered">
               <div class="column has-text-centered">
-                  <img src="./static/images/teaser.png"
+                  <img src="./static/images/intro.png"
                        class="interpolation-image"
                        alt="Interpolate start reference image."
-                       style="width: 100%; height: auto;"/>
+                       style="width: 80%; height: auto;"/>
                   <p class="has-text-centered" style="margin-top: 10px; font-size: 0.9em; color: #666;">
-                  <b>Figure 1: OmniDrive is a holistic vision-language dataset for autonomous driving, utilizing counterfactual reasoning to generate high-quality QA data from simulated and actual trajectories. We explore two baseline models: Omni-Q, which designs vision-language models (VLMs) from a 3D perception standpoint, and Omni-L, which builds from VLMs to enhance 3D integration. </b> 
+                  <b>Figure 1: Illustration of Instructed Temporal Grounding for Videos (VideoITG) with different sampling strategies. </b> 
                   </p>
               </div>
       </div>
@@ -145,7 +142,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              The advances in vision-language models (VLMs) have led to a growing interest in autonomous driving to leverage their strong reasoning capabilities. However, extending these capabilities from 2D to full 3D understanding is crucial for real-world applications. To address this challenge, we propose OmniDrive, a holistic vision-language dataset that aligns agent models with 3D driving tasks through counterfactual reasoning. This approach enhances decision-making by evaluating potential scenarios and their outcomes, similar to human drivers considering alternative actions. Our counterfactual-based synthetic data annotation process generates large-scale, high-quality datasets, providing denser supervision signals that bridge planning trajectories and language-based reasoning. Futher, we explore two advanced OmniDrive-Agent frameworks, namely Omni-L and Omni-Q, to assess the importance of vision-language alignment versus 3D perception, revealing critical insights into designing effective LLM-agents. Significant improvements on the DriveLM Q&A benchmark and nuScenes open-loop planning demonstrate the effectiveness of our dataset and methods.
+              Recent studies reveal that selecting informative and relevant video frames can significantly improve the performance of Video Large Language Models (Video-LLMs). Current methods are mostly training-free approaches, such as reducing inter-frame redundancy, employing separate models for image-text relevance assessment, or utilizing temporal video grounding for event localization, whereas they struggle to address the complex scenarios of real-world video understanding. To address these challenges, we propose <b>I</b>nstructed <b>T</b>emporal <b>G</b>rounding for <b>Videos</b>, namely <b>VideoITG</b>, which features customized sampling aligned with user instructions. We first develop an automated data annotation pipeline that consists of three steps: detailed clip-level description generation, question-guided clip retrieval, and task-specific frame selection. With this pipeline, we create a VideoITG dataset containing 40K videos and 500K instruction-dependent key frame selection annotations. We then design a plug-and-play VideoITG model, which takes advantage of visual language alignment and reasoning capabilities of Video-LLMs, for effective video frame selection in a discriminative manner. Coupling with current Video-LLMs, VideoITG achieves consistent performance improvements across multiple multimodal video understanding benchmarks, showing its superiority and great potentials for video understanding. Data, model and code will be made publicly available.
             </p>
           </div>
         </div>
@@ -162,14 +159,14 @@
   <!-- Quantitative Results. -->
       <div class="columns is-centered">
         <div class="column is-full-width">
-          <center><h2 class="title is-3">OmniDrive Dataset Construction</h2></center>
+          <center><h2 class="title is-3">Dataset Construction</h2></center>
           <div class="column is-center has-text-centered">
-              <img src="./static/images/data_gen.png"
+              <img src="./static/images/dataset.png"
                    class="interpolation-image"
                    alt="Interpolate start reference image."
                    style="transform: scale(0.9);"/>
               <p class="has-text-centered" style="margin-top: 2px; font-size: 0.9em; color: #666;">
-                <b>Figure 2: The proposed counterfactual-based synthetic Q&A data generation pipeline integrates semantic key-frame selection, counterfactual-based checklist and prompt design, and human-in-the-loop quality checks to create high-quality Q&A pairs. </b>
+                <b>Figure 2: We apply a coarse-to-fine strategy for selecting informative frames for long videos. The whole process includes clip-level detailed description, question-guided clip retrieval and task-specific frame selection. </b>
               </p>
           </div>
           <!--/ Interpolating. -->
@@ -187,14 +184,14 @@
   <!-- Quantitative Results. -->
       <div class="columns is-centered">
         <div class="column is-full-width">
-          <center><h2 class="title is-3">OmniDrive-Agent</h2></center>
+          <center><h2 class="title is-3">Model Design</h2></center>
           <div class="column is-center has-text-centered">
-              <img src="./static/images/pipeline.png"
+              <img src="./static/images/method.png"
                    class="interpolation-image"
                    alt="Interpolate start reference image."
                    style="transform: scale(0.95);"/>
               <p class="has-text-centered" style="margin-top: 2px; font-size: 0.9em; color: #666;">
-                <b>Figure 3: Overall pipeline of Omni-L and Omni-Q. The Omni-L. Omni-L follows the 2D VLM design of LLAVA, introducing 3D positional encoding and using MLP layers for vision-language alignment. Omni-Q is based on 3D BEV perception, aligning its architecture with the Q-Former design.</b>
+                <b>Figure 3: Model design on VideoITG-40K dataset: (a) Text generation aligns video and language tokens for sequential predictions; (b) Classification with causal attention utilizes anchor tokens for temporal cue management; (c) Classification with full attention facilitates interaction across visual and text tokens without anchors.</b>
               </p>
           </div>
           <!--/ Interpolating. -->
@@ -218,11 +215,11 @@
           <div class="content has-text-justified">
           </div>
           <div class="column is-center has-text-centered">
-              <img src="./static/images/results1.png"
+              <img src="./static/images/exp1.png"
                    class="interpolation-image"
                    alt="Interpolate start reference image."/>
                    <p class="has-text-centered" style="margin-top: 2px; font-size: 0.9em; color: #666;">
-                    <b>Table 1: Comparison on nuScenes Open-loop planning.</b>
+                    <b>Table 1: Performance comparison of VideoITG when integrated with different Video-LLMs, which have different model sizes of the answering LLM and different numbers of sampled frames.</b>
                   </p>                   
           </div>
   
@@ -231,16 +228,16 @@
           <!--/ Interpolating. -->
   
           <!-- Re-rendering. -->
-          <h3 class="title is-4">Empirical Study on OmniDrive</h3>
+          <h3 class="title is-4">Empirical Study on VideoITG</h3>
           <div class="content has-text-justified">
           </div>
           <div class="columns is-centered">
             <div class="column is-center has-text-centered">
-                <img src="./static/images/results2.png"
+                <img src="./static/images/exp2.png"
                      class="interpolation-image"
                      alt="Interpolate start reference image."/>
                      <p class="has-text-centered" style="margin-top: 2px; font-size: 0.9em; color: #666;">
-                      <b>Table 2: Empirical study on OmniDrive dataset and OmniDrive agent design.</b>
+                      <b>Table 2: Empirical study on VideoITG-40k dataset and VideoITG model design.</b>
                     </p>         
             </div>
           </div>
@@ -255,52 +252,25 @@
     <div class="container is-max-desktop">
       <center><h2 class="title is-3">Qualitative Results</h2></center><br>
       <h2 class="caption" style="text-align: center; margin-bottom: 20px; font-size: 1.2em; font-weight: bold; margin-left: 50px;">
-        OmniDrive is capable of effectively planning and reasoning within 3D space, making it ideal for complex driving scenarios. It can navigate diverse environments, handle dynamic obstacles, and optimize routes in real-time, ensuring safe and efficient travel.
+        Our VideoITG model effectively searches for temporal cues in long videos, enabling VideoLLM to accurately answer questions.
       </h2>
-      <div class="content has-text-centered">
-        <img src="./static/images/demo1.gif"
-             class="interpolation-image"
-             alt="Planning example 1."/>
-        <p class="has-text-centered" style="margin-top: 2px; font-size: 0.9em; color: #666;">
-          <b>Figure 4: OmniDrive-Agent planning example 1.</b>
-        </p>
-      </div>
-      <br/>
-      <div class="content has-text-centered">
-        <img src="./static/images/demo2.gif"
-             class="interpolation-image"
-             alt="Planning example 2."/>
-        <p class="has-text-centered" style="margin-top: 2px; font-size: 0.9em; color: #666;">
-          <b>Figure 5: OmniDrive-Agent planning example 2.</b>
-        </p>
-      </div>
-      <br/>
-      <div class="content has-text-centered">
-        <img src="./static/images/demo3.gif"
-             class="interpolation-image"
-             alt="Conversation example."/>
-        <p class="has-text-centered" style="margin-top: 2px; font-size: 0.9em; color: #666;">
-          <b>Figure 6: OmniDrive-Agent conversation example.</b>
-        </p>
-      </div>
-      <br/>
-      <div class="content has-text-centered">
-        <img src="./static/images/demo4.png"
-             class="interpolation-image"
-             alt="Conversation example."/>
-        <p class="has-text-centered" style="margin-top: 2px; font-size: 0.9em; color: #666;">
-          <b>Figure 7: OmniDrive-Agent counterfactual reasoning example 1.</b>
-        </p>
-      </div>
-      <br/>
-      <div class="content has-text-centered">
-        <img src="./static/images/demo5.png"
-             class="interpolation-image"
-             alt="Conversation example."/>
-        <p class="has-text-centered" style="margin-top: 2px; font-size: 0.9em; color: #666;">
-          <b>Figure 8: OmniDrive-Agent counterfactual reasoning example 2.</b>
-        </p>
-      </div>
+      <div class="content has-text-justified" style="margin-left: 150px;"> <!-- 将右边距增加到100px -->
+          <iframe width="700" height="400" src="https://www.youtube.com/embed/E83XxGvEPtI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/example1.png"
+               class="interpolation-image"
+               alt="Qualitative result 1."/>
+        </div>
+        <br/>
+        <div class="content has-text-justified" style="margin-left: 150px;"> <!-- 将右边距增加到100px -->
+          <iframe width="700" height="400" src="https://www.youtube.com/embed/6DAFkaGUiT4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="content has-text-centered">
+          <img src="./static/images/example2.png"
+               class="interpolation-image"
+               alt="Qualitative result 2."/>
+        </div>
       </div>
     </div>
   </section>
@@ -311,13 +281,13 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{wang2025omnidrive,
-      title={Omnidrive: A holistic vision-language dataset for autonomous driving with counterfactual reasoning},
-      author={Wang, Shihao and Yu, Zhiding and Jiang, Xiaohui and Lan, Shiyi and Shi, Min and Chang, Nadine and Kautz, Jan and Li, Ying and Alvarez, Jose M},
-      booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
-      pages={22442--22452},
-      year={2025}
-    }
+    <pre><code>@article{wang2024videoitg,
+      title={VideoITG: Improving Multimodal Video Understanding with Instructed Temporal Grounding}, 
+      author={Shihao Wang and Guo Chen and De-an Huang and Zhiqi Li and Guilin Liu and Jose M. Alvarez and Lei Zhang and Zhiding Yu},
+      year={2024},
+      eprint={arXiv:2408.15998},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }</code></pre>
   </div>
 </section>
